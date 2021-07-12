@@ -1,3 +1,4 @@
+import Container from './components/Container/Container';
 import Profile from './components/Profile/Profile';
 import user from './components/Profile/user.json';
 import StatisticsList from './components/Statistics/StatisticsList';
@@ -10,7 +11,7 @@ import transactions from './components/TransactionHistory/transactions.json';
 
 export default function App() {
   return (
-    <div>
+    <Container>
       <Profile
         avatar={user.avatar}
         name={user.name}
@@ -25,6 +26,6 @@ export default function App() {
       </Section>
       <FriendList items={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 }

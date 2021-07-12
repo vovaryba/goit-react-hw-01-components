@@ -1,8 +1,9 @@
 import Statistics from './Statistics';
+import s from './StatisticsList.module.css';
 
 function StatisticsList({ items }) {
   return (
-    <ul className="stat-list">
+    <ul className={s.statList}>
       {items.map(item => (
         <Statistics
           key={item.id}
